@@ -11,7 +11,7 @@ On *Unlimited On Demand*, o2 sends an SMS when you've used 80% or 100% of your h
 - Listens for incoming SMS (works even when the app is closed).
 - If the sender is `80112` and the text asks you to reply `WEITER` (the "80% … verbraucht" or "Datenvolumen verbraucht" messages), it sends `WEITER` back.
 - Ignores the "Zusatzvolumen wurde erfolgreich aktiviert" confirmation.
-- 3-minute cooldown, so the 80% and 100% messages arriving back-to-back only trigger one top-up.
+- Replies instantly, then a 1-minute cooldown so the 80% and 100% messages arriving back-to-back only trigger one top-up.
 - Replies from the same SIM that received the message (dual-SIM safe).
 - Shows a notification and keeps a small log plus a "top-ups today" counter.
 
