@@ -32,7 +32,7 @@ class SmsReceiver : BroadcastReceiver() {
 
         val now = System.currentTimeMillis()
         if (!Matcher.shouldReply(address, body, store.lastSentAt, now)) {
-            store.log("Skipped (already sent WEITER < 3 min ago)")
+            store.log("Skipped (already sent WEITER < 1 min ago)")
             return
         }
 

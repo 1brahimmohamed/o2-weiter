@@ -5,7 +5,7 @@ object Matcher {
     const val REPLY = "WEITER"
 
     /** Cooldown so the 80% and 100% SMS (often seconds apart) only trigger one top-up. */
-    const val COOLDOWN_MS = 3 * 60 * 1000L
+    const val COOLDOWN_MS = 60 * 1000L
 
     fun isFromO2(address: String?): Boolean {
         val digits = address?.filter { it.isDigit() } ?: return false
